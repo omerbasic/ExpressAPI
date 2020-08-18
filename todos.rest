@@ -1,0 +1,28 @@
+GET http://localhost:3000/api/todos
+
+###
+
+GET http://localhost:3000/api/todos/0
+
+###
+
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+    "title": "Handla mat",
+    "date": "2020-08-18"
+}
+
+###
+
+PUT http://localhost:3000/api/todos/0
+Content-Type: application/json
+
+{
+    "title": "Handla massa mat",
+    "date": "2020-08-18"
+}
+
+###
+DELETE http://localhost:3000/api/todos/0
