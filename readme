@@ -1,4 +1,10 @@
-In order to make this application run
+Title: ExpressAPI Friendlist
+Github: https://github.com/omerbasic/ExpressAPI
+
+Description:
+A simple API which allows the user to add friends to a list, the application will also render the list of friends 
+
+In order to make this application run:
 
 Assuming node.js is installed
 
