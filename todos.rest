@@ -4,7 +4,7 @@ POST http://localhost:3000/api/friends
 Content-Type: application/json
 
 {
-    "Firstname": "Ensar",
-    "Lastname": "Omerbasic"
+    "Firstname": " ",
+    "Lastname": " "
 }
 
