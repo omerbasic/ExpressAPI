@@ -1,9 +1,5 @@
 GET http://localhost:3000/api/friends
-
 ####
-
-
-
 POST http://localhost:3000/api/friends
 Content-Type: application/json
 
