@@ -16,15 +16,17 @@ const app = express()
 //ascertain parsing of body as JSON
 app.use(express.json())
 
-app.use(express.static('/'))
-
-app.get('/client/index.html')
-
-
-
-
+app.use(express.static('client'))
+/* 
+app.get('/', (req, res) => {
+    res.send()
+})
 
 
+
+app.get('/client/index.html', (req, res) => res.json('halp')) */
+
+//Todo stuff
 
 app.get('/api/todos', (req, res) => res.json(todos))
 app.get('/api/todos/:id', (req, res) => res.json('Specific todo, id:' + req.params.id))
@@ -54,4 +56,4 @@ app.use((req, res) => {
 
 
 //start
-app.listen(3000, () => console.log('Started'))
+app.listen(3000, () => console.log('3000'))
