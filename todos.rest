@@ -1,8 +1,8 @@
 GET http://localhost:3000/api/todos
 
-###
+####
 
-GET http://localhost:3000/api/todos/0
+GET http://localhost:3000/api/todos/0123
 
 ###
 
@@ -26,3 +26,8 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/api/todos/0
+
+
+### 404
+
+POST http://localhost:3000/api/todos/ajodwoiadjiwao
