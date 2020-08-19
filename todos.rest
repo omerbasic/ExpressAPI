@@ -2,9 +2,7 @@ GET http://localhost:3000/api/friends
 
 ####
 
-GET http://localhost:3000/api/friends
 
-###
 
 POST http://localhost:3000/api/friends
 Content-Type: application/json
@@ -14,24 +12,3 @@ Content-Type: application/json
     "Lastname": "Omerbasic"
 }
 
-###
-
-PUT http://localhost:3000/api/todos/0
-Content-Type: application/json
-
-{
-    "title": "Handla massa mat",
-    "date": "2020-08-18"
-}
-
-###
-DELETE http://localhost:3000/api/todos/0
-
-
-### 404
-
-POST http://localhost:3000/api/todos/ajodwoiadjiwao
-
-### 
-
-GET http://localhost:3000/client/index.html
