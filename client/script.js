@@ -4,9 +4,19 @@ async function start(){
     const result = await fetch('/api/friends')
     const friends = await result.json()
     
-    
+    const nasaresult = await fetch('https://api.nasa.gov/planetary/apod?api_key=C36doer5eZSfOmVFy5p4sdaSNys6edZrTfaurYr6')
+    const nasa = await nasaresult.json()
+
+  
+
+    console.log(nasa)
+
     addEventListeners()
     listFriends(friends)
+
+    const p = document.querySelector('p')
+
+    p.innerHTML = JSON.stringify(nasa)
 
     
     console.log(friends)

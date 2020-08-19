@@ -1,0 +1,12 @@
+In order to make this application run
+
+Assuming node.js is installed
+
+1 open terminal
+2 navigate to the directory
+3 cd ExpressAPI
+4 npm init
+5 npm i express --save
+6 npm i nodemon
+7 enter extensions search for and install rest client
+8 run app with nodemon server.js
