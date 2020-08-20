@@ -11,11 +11,15 @@ async function start(){
     const nasaresult = await fetch('https://api.nasa.gov/planetary/apod?api_key=C36doer5eZSfOmVFy5p4sdaSNys6edZrTfaurYr6')
     const nasa = await nasaresult.json()
 
+    
     addEventListeners()
     listFriends(friends)
 
     const p = document.querySelector('p')
-    p.innerHTML = JSON.stringify(nasa)
+    p.innerHTML = JSON.stringify(nasa.explanation)
+
+    const medialink = document.getElementById('media')
+    medialink.innerHTML = JSON.stringify(nasa.url)
 }
 
 //creates an instance for each friend fetched from server
